@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioFusionCyborg | Contact Us</title>
+    <link rel="icon" type="image/x-icon" href="fevicon.png">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <script src="assets/script.js"></script>
+</head>
+    
+<body>
+    <header>
+        <div class="flex-container">
+            <a href="index.html"><img src="logo2.png" alt="BioFusionCyborg Logo" class="logo"></a>
+            <nav id="navbar">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="product.html">Products</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <h1>CONNECT WITH OUR CYBERNETICS TEAM</h1>
+        <p>Augmentation consultations • Technical support • Partnership inquiries</p>
+    </section>
+
+    <!-- Contact Options Grid -->
+    <section class="contact-grid">
+        <!-- Contact Form -->
+        <div class="contact-card contact-form" id="contact-form">
+            <h2><span class="glow-text">SEND A MESSAGE</span></h2>
+            <form action="disclaimer.html">
+                <div class="form-group">
+                    <label for="name">FULL NAME</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">SUBJECT</label>
+                    <select id="subject" required>
+                        <option value="">Select augmentation type</option>
+                        <option>Neural implants</option>
+                        <option>Bionic limbs</option>
+                        <option>Sensory upgrades</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">MESSAGE</label>
+                    <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">SUBMIT MESSAGE</button>
+            </form>
+        </div>
+        
+        <!-- Contact Info -->
+        <div class="contact-card contact-info">
+            <h2><span class="glow-text">REACH US</span></h2><br>
+            <div class="info-item">
+                <h3>📍LOCATION</h3>
+                <p>Level 7, Neon District<br>CyberCity X-42</p>
+            </div><br>
+            <div class="info-item">
+                <h3>📞CONTACT</h3>
+                <p>+8801XXXXXXXXX<br>24/7 Support |  WhatsApp Available </p>
+            </div><br>
+            <div class="info-item">
+                <h3>⏱️WORKING HOURS</h3>
+                <p>Monday-Friday: 8AM-10PM <br>Weekends: Emergency only</p>
+            </div><br>
+            <div class="social-links">
+                <a href="disclaimer.html" class="social-icon">𝕏</a>
+                <a href="disclaimer.html" style="justify-content: space-between;" class="social-icon">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAP -->
+    <section class="map-section">
+        <div class="map-placeholder">
+            <div class="pulse-effect"></div>
+            <p>ACTIVATE LOCATION TRACKING TO VIEW NEURO-HUB</p>
+            <a style="text-decoration: none;" href="disclaimer.html">
+                <button class="cta-button-outline">ENABLE GPS</button>
+            </a>
+        </div>
+    </section>
+    
+
+    <!--footer-->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="index.html">
+                    <img src="logo2.png" alt="BioFusionCyborg Logo" width="120">
+                </a>
+            </div>
+            <div class="footer-links">
+                <a href="disclaimer.html">Privacy Policy</a>
+                <a href="disclaimer.html">Terms of Service</a>
+                <a href="disclaimer.html">Careers</a>
+            </div>
+            <div class="footer-social">
+                <a href="disclaimer.html">X</a>
+                <a href="disclaimer.html">LinkedIn</a>
+                <a href="disclaimer.html">Facebook</a>
+            </div>
+        </div>
+        <p class="copyright">© 2025 BioFusionCyborg. All rights reserved.</p>
+    </footer>
+    <button onclick="scrollToTop()" id="topBtn" title="Go to top">↑</button>
+    <script src="script.js"></script>
+    
+</body>
+</html>

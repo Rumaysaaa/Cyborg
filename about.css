@@ -1,0 +1,463 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0a0a0a;
+    color: #e0e0e0;
+    line-height: 1.6;
+  }
+  
+  /* navbar */
+
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 40px;
+    height: 80px;
+    background-color: rgba(10, 10, 10, 0.9);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid #00f0ff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+#navbar {
+    display: flex;
+    gap: 50px;
+}
+
+#navbar a {
+    text-decoration: none;
+    padding: 8px 12px;
+    color: #e0e0e0;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+#navbar a:hover {
+    color: #00f0ff;
+}
+
+#navbar a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #00f0ff;
+    transition: all 0.3s ease;
+}
+
+#navbar a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+  
+  /*first part*/
+  .about-hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url('cyber-lab.jpg') center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .about-hero h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4rem;
+    color: #00f0ff;
+    text-shadow: 0 0 20px rgba(0, 240, 255, 0.7);
+    margin-bottom: 20px;
+  }
+  
+  .about-hero p {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+  }
+  
+  /*sections*/
+  .section-header {
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 180px;
+  }
+  
+  .section-header h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: #00f0ff;
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  /*second part*/
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+  }
+  
+  .text-content {
+    margin-bottom: 20px;
+    margin-left: 120px;
+    font-size: 1.1rem;
+  }
+  
+  .lab-photo {
+    width: 100%;
+    margin-right: 40px;
+    border-radius: 8px;
+    border: 2px solid #00f0ff;
+  }
+  
+  .caption {
+    text-align: center;
+    margin-top: 10px;
+    color: #aaa;
+    font-size: 0.9rem;
+  }
+  
+  /* third part*/
+  .timeline {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .timeline-item {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+  }
+  
+  .year {
+    font-family: 'Orbitron', sans-serif;
+    color: #00f0ff;
+    font-size: 1.5rem;
+    width: 100px;
+  }
+  
+  .event {
+    padding-left: 30px;
+    border-left: 2px solid #00f0ff;
+    position: relative;
+    padding-bottom: 20px;
+  }
+  
+  .event::before {
+    content: '';
+    position: absolute;
+    left: -7px;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    background: #00f0ff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00f0ff;
+  }
+  
+  /* Team part*/
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .member {
+    background: #111;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .member:hover {
+    transform: translateY(-10px);
+    border: 1px solid #00f0ff;
+  }
+  
+  .member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #00f0ff;
+  }
+  
+  .member h3 {
+    color: #00f0ff;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 5px;
+  }
+  
+  .member .title {
+    color: #aaa;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+  
+  .member .bio {
+    margin-bottom: 15px;
+  }
+  
+  .member .social {
+    color: #00f0ff;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  /* Ethics part */
+  .principles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .principle-card {
+    background: rgba(17, 17, 17, 0.7);
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #222;
+  }
+  
+  .principle-card:hover {
+    border-color: #00f0ff;
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
+    transform: translateY(-5px);
+    transition: all 0.3s ease; 
+  }
+  
+  .principle-card .icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .principle-card h3 {
+    color: #00f0ff;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 15px;
+  }
+  
+  /* CTA Button*/
+  .cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background: transparent;
+    color: #00f0ff;
+    border: 2px solid #00f0ff;
+    font-family: 'Orbitron', sans-serif;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background: #00f0ff;
+    color: #0a0a0a;
+    box-shadow: 0 0 15px #00f0ff;
+  }
+  
+  /*footer*/
+  footer {
+    background: #111;
+    padding: 60px 20px 30px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+  }
+  
+  .footer-links, .footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  footer a {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #00f0ff;
+  }
+  
+  .copyright {
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+/* RESPONSIVE DESIGN */
+
+/* TAB */
+@media (max-width: 1024px) {
+    .about-hero h1 {
+      font-size: 2.4rem;
+    }
+  
+    .about-hero p {
+      font-size: 1.1rem;
+    }
+    .text-content p{
+        font-size: 13px;
+    }
+  
+    .section-header h2 {
+      font-size: 1.8rem;
+    }
+  
+    .text-content h3 {
+      font-size: 1.3rem;
+    }
+  
+    .timeline-item .year {
+      font-size: 1.3rem;
+    }
+  
+    .lab-photo {
+      max-width: 100%;
+    }
+  
+    .content-grid {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  #topBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background-color: #00f0ff;
+    color: #0a0a0a;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 0 10px #00f0ff;
+  }
+  
+  #topBtn:hover {
+    background-color: #0a0a0a;
+    color: #00f0ff;
+  }
+
+  
+ /* PHN */
+@media (max-width: 767px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        height: auto;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    #navbar {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    #navbar a {
+        padding: 10px;
+        font-size: 1rem;
+        width: 100%;
+        border-bottom: 1px solid #222;
+    }
+    .about-hero h1 {
+      font-size: 1.8rem;
+    }
+  
+    .about-hero p {
+      font-size: 1rem;
+    }
+  
+    .section-header h2 {
+      font-size: 1.5rem;
+    }
+  
+    .text-content h3 {
+      font-size: 10px;
+    }
+    .text-content blockquote{
+        font-size:10px;
+    }
+  
+    .text-content p,
+    .member .bio,
+    .principle-card p {
+      font-size: 0.85rem;
+    }
+
+    .text-content p{
+        font-size: 7px;
+    }
+  
+    .timeline-item .year {
+      font-size: 1.2rem;
+    }
+  
+    .footer-links a,
+    .footer-social a {
+      font-size: 0.85rem;
+    }
+  
+    .member img {
+      max-width: 100%;
+    }
+  
+    .team-grid,
+    .principles,
+    .timeline {
+      grid-template-columns: 1fr;
+    }
+  
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+  }
